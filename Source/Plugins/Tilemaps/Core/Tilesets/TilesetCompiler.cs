@@ -617,7 +617,7 @@ namespace Duality.Plugins.Tilemaps
 			{
 				baseIndex = targetContentPos.Y * width + targetContentPos.X;
 				offsetIndex = targetContentPos.Y * width + targetContentPos.X - offset;
-				for (int i = 0; i < targetTileSize.X; i++)
+				for (int i = 0; i < targetTileSize.Y; i++)
 				{
 					rawData[offsetIndex + i * width] = rawData[baseIndex + i * width];
 				}
@@ -628,7 +628,7 @@ namespace Duality.Plugins.Tilemaps
 			{
 				baseIndex = targetContentPos.Y * width + targetContentPos.X + targetTileSize.X - 1;
 				offsetIndex = targetContentPos.Y * width + targetContentPos.X + targetTileSize.X - 1 + offset;
-				for (int i = 0; i < targetTileSize.X; i++)
+				for (int i = 0; i < targetTileSize.Y; i++)
 				{
 					rawData[offsetIndex + i * width] = rawData[baseIndex + i * width];
 				}
